@@ -93,6 +93,7 @@
                 $("#ok3").remove();
                 $("#cancel3").remove();
                 $("#bad-name").remove();
+                $("#bonito-nombre").remove();
                 name.after('<img id="cancel3" src="img/redes/cancel.png" width="28" height="28">');
                 name.attr("placeholder", "Debes escribir tu nombre");
                 name.before('<p id="bad-name">! Nombre incorrecto </p>');
@@ -100,6 +101,9 @@
                     "margin-bottom": "0"});
         }
         else{
+            $("#bonito-nombre").remove();
+            name.before('<p id="bonito-nombre">Bonito nombre!.</p>');
+                $("#bonito-nombre").css({"color": "#52FD8B", "margin-bottom": "0" });
                 name.css({"background": "#C8FDD4",
                     "border": "2px solid #52FD8B"});
                 $("#cancel3").remove();
