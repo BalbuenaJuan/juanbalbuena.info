@@ -95,6 +95,7 @@
                 $("#bad-name").remove();
                 $("#bonito-nombre").remove();
                 name.after('<img id="cancel3" src="./static/img/redes/cancel.png" width="28" height="28">');
+                name.after('<img id="cancel3" src="img/redes/cancel.png" width="28" height="28">');
                 name.attr("placeholder", "Debes escribir tu nombre");
                 name.before('<p id="bad-name">! Nombre incorrecto </p>');
                 $("#bad-name").css({"color": "red",
@@ -167,15 +168,15 @@
     $("#wordpress").click(function(){
         cerrarAnimaciones();
         $(ids[7]).show("slow");
-    })
+    });
     $('#git').click(function () {
         cerrarAnimaciones();
         $(ids[8]).show("slow");
-    })
+    });
 		$('#github').click(function () {
         cerrarAnimaciones();
         $(ids[9]).show("slow");
-    })
+    });
 		$("#balsamiq").click( function(){
         cerrarAnimaciones();
         $(ids[10]).show("slow");

@@ -23,6 +23,12 @@ gulp.task('minify', function () {
         .pipe(gulp.dest('build'))
 });
 
+var concat = require('gulp-concat');
+gulp.task('scripts', function() {
+    return gulp.src('*.js')
+        .pipe(concat('app.js'))
+        .pipe(gulp.dest('build'));
+});
 
 
 
